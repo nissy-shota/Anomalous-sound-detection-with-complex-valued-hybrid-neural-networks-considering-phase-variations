@@ -1,0 +1,14 @@
+name: log_and_raw_complex_spectrogram
+file_name: multi_channels_complex_spectrogram_raw_and_diff_log.pt
+
+feature:
+  n_frames: 10
+  n_hop_frames: 1
+  n_fft: 1024
+  hop_length: 512
+  power: 2.0
+  sample_rate: 16000
+
+linear_in: 7936
+
+conv1_in_channels: 4

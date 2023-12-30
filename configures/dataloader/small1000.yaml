@@ -1,0 +1,6 @@
+name: small 1000
+train_size: 1000
+valid_size: 100
+num_workers: 20
+conveyor_train_size: 1000
+conveyor_valid_size: 100

@@ -1,0 +1,21 @@
+version: "3.8"
+
+services:
+  complex-toyadmos:
+    runtime: nvidia
+    environment:
+      - NVIDIA_VISIBLE_DEVICES=all
+    build:
+      args:
+        - BASE_IMAGE=nvidia/cuda:11.0.3-devel-ubuntu20.04
+        - PYTHON_VERSION=3.8
+      context: ../../
+      dockerfile: environments/Dockerfile
+    shm_size: '10gb'
+    user: 1000:1000
+    tty: true
+    volumes:
+      - ../../:/home/ShotaNishiyama/complex-valued-nn-for-ToyADMOS
+      - $HOME/data/FeatureExtractedToyADMOSAddEnvNoise:/home/ShotaNishiyama/complex-valued-nn-for-ToyADMOS/FeatureExtractedToyADMOSAddEnvNoise
+    ports:
+      - 49163:49163

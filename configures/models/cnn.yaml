@@ -1,0 +1,9 @@
+model_name: CNN
+num_hidden: 512
+conv1_out_channels: 6
+conv2_out_channels: 10
+conv3_out_channels: 16
+# kernel size
+conv1_kernel_size: 5
+conv2_kernel_size: 5
+conv3_kernel_size: 5

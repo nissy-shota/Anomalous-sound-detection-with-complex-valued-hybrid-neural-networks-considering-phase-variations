@@ -1,0 +1,6 @@
+epochs : 2
+batch_size : 4
+shuffle : True
+validation_split : 0.1
+verbose : 1
+script_file_name: train.py

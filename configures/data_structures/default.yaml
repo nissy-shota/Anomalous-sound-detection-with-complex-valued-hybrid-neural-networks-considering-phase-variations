@@ -1,0 +1,5 @@
+dataset_path: ./FeatureExtractedToyADMOSAddEnvNoise
+artifacts_directory: artifacts
+model_directory: ./artifacts/model
+result_directory: ./artifacts/result
+result_file: result.csv

@@ -1,0 +1,6 @@
+name: develop
+train_size: 15
+valid_size: 2
+num_workers: 1
+conveyor_train_size: 10
+conveyor_valid_size: 2

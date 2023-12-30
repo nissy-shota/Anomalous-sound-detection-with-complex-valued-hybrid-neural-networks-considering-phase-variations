@@ -1,0 +1,20 @@
+# @package _global_
+
+defaults:
+  - _self_
+  - augumentation: random_crop
+  - data_structures: default
+  - dataloader: default
+  - dataset: ToyADMOS
+  - experiments: default
+  - metrics: gaussian
+  - models: cnn
+  - optimizer: Adam
+  - preprocessing: log_and_raw_complex_spectrogram
+  - scheduler: StepLR
+  - test: production
+  - training: production
+
+hydra:
+  run:
+    dir: ./artifacts/outputs/${now:%Y-%m-%d}/${now:%H-%M-%S}

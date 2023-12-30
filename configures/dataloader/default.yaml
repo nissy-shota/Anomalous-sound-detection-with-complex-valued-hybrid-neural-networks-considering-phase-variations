@@ -1,0 +1,6 @@
+name: large 4000 or 3600
+train_size: 3600
+valid_size: 400
+num_workers: 20
+conveyor_train_size: 2700
+conveyor_valid_size: 300
